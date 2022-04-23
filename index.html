@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header _container">
+      <div class="header__logo">
+        <a href="#"><img src="img/logo.svg" alt="logo">
+        </a>
+      </div>
+      <div class="header__profile profile">
+        <a href="#" class="profile__person">
+          <div class="profile__icon">
+            <img src="img/icon-profile.svg" alt="avatar">
+          </div>
+          <div class="profile__name">Имя Фамилия</div>
+        </a>
+        <a href="#" class="profile__exit _icon-exit">
+        </a>
+      </div>
+    </header>
+
+    <section class="bread-crumbs _container">
+      <ul class="bread-crumbs__list">
+        <li><a href="#" class="bread-crumbs__employees">Сотрудники</a></li>
+        <li class="bread-crumbs__arrow _icon-arrow"></li>
+        <li class="bread-crumbs__person">Виктория Беляева, belyeva@companyname</li>
+      </ul>
+    </section>
+
+    <div class="main">
+      <section class="sidebar">
+        <div class="sidebar__search  _icon-search">
+          <input class="sidebar__input" type="text" name="fast-search" placeholder="Быстрый поиск...">
+        </div>
+        <ul class="sidebar__person-list">
+          <li class="sidebar__person-item person-item" data-person="item-1">
+            <div class="person-item__body">
+              <div class="person-item__avatar"><img src="img/avatar1.png" alt="avatar"></div>
+              <div class="person-item__description">
+                <div class="person-item__name "><span class="person-active item-1">Анна Иванова</span></div>
+                <div class="person-item__position">Менеджер, Отдел продаж</div>
+                <span class="person-item__status dismiss">на увольнении</span>
+              </div>
+              <div class="person-item__points">12</div>
+            </div>
+          </li>
+          <li class="sidebar__person-item person-item person-item_active" data-person="item-2">
+            <div class="person-item__body ">
+              <div class="person-item__avatar"><img src="img/avatar2.png" alt="avatar"></div>
+              <div class="person-item__description">
+                <div class="person-item__name"><span class="person-active item-2 _icon-viewed">Виктория Беляева</span>
+                </div>
+                <div class="person-item__position">Менеджер, Отдел продаж</div>
+                <span class="person-item__status vacation">в отпуске</span>
+              </div>
+              <div class="person-item__points attention">247</div>
+            </div>
+          </li>
+          <li class="sidebar__person-item person-item" data-person="item-3">
+            <div class="person-item__body">
+              <div class="person-item__avatar"><img src="img/avatar3.png" alt="avatar"></div>
+              <div class="person-item__description">
+                <div class="person-item__name "><span class="person-active item-3">Виктор Сурков</span></div>
+                <div class="person-item__position">Менеджер, Отдел продаж</div>
+              </div>
+              <div class="person-item__points">0</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="content">
+        <section class="person-result">
+          <div class="person-result__left">
+            <div class="person-result__profile">
+              <div class="person-result__avatar"><img src="img/avatar2.png" alt=""></div>
+              <div class="person-result__description">
+                <div class="person-result__name">Виктория Беляева <span class="_icon-viewed"></span></div>
+                <div class="person-result__position">Менеджер, Отдел продаж</div>
+              </div>
+            </div>
+            <div class="person-result__statistics statistics">
+              <div class="person-result__top">
+                <div class="person-result__last-activity">Последняя активность <span>сегодня в 12:22</span></div>
+              </div>
+              <div class="statistics__wrapper">
+                <ul class="statistics__list">
+                  <li class="statistics__item">
+                    <div class="statistics__title">Уровень риска</div>
+                    <span class="statistics__indicator ">157% <span class="_negative">-100%</span></span>
+                  </li>
+                  <li class="statistics__item">
+                    <div class="statistics__title">Продуктивность</div>
+                    <span class="statistics__indicator ">86% <span class="_positive">+3%</span></span>
+                  </li>
+                  <li class="statistics__item">
+                    <div class="statistics__title">Индекс активности</div>
+                    <span class="statistics__indicator ">2.4% <span class="_positive">+14%</span></spa>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="person-result__right">
+            <div class="person-result__list-employees _icon-arrow-long">
+              <a href="#" class="sidebar__link-open">к списку сотрудников</a>
+            </div>
+            <div class="person-result__other">
+              <a href="#" class="_icon-check"></a>
+              <a href="#" class="_icon-camera"></a>
+              <a href="#" class="_icon-tv"></a>
+              <a href="#" class="_icon-more"></a>
+            </div>
+          </div>
+        </section>
+        <section class="anomalies">
+          <h2 class="anomalies__title">АНОМАЛИИ</h2>
+          <ul class="anomalies__list">
+            <li class="anomalies__item">Использование более одного аккаунта в соцсетях или мессенджерах</li>
+            <li class="anomalies__item">Первое использование устройства</li>
+            <li class="anomalies__item">Отсутствие более 40 дней</li>
+          </ul>
+        </section>
+        <section class="basic-indicators">Данные не найдены</section>
+
+        <section class="tables">
+          <table class="table">
+            <caption class="table__caption">Приложения и категории</caption>
+            <thead class="table__header">
+              <tr class="table__row">
+                <th class="table__th table__th_left">Категории приложений</th>
+                <th class="table__th">время</th>
+                <th class="table__th">%</th>
+                <th class="table__th">рост</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__col table__col-indicator table__col-indicator_yellow">Мессенджеры</td>
+                <td class="table__col table__col_time">20:55</td>
+                <td class="table__col table__col_center">18</td>
+                <td class="table__col table__col_right">+2%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__col table__col-indicator table__col-indicator_yellow">Мессенджеры</td>
+                <td class="table__col table__col_time">20:55</td>
+                <td class="table__col table__col_center">18</td>
+                <td class="table__col table__col_right">+2%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__col table__col-indicator table__col-indicator_pink">Мессенджеры</td>
+                <td class="table__col table__col_time">20:55</td>
+                <td class="table__col table__col_center">18</td>
+                <td class="table__col table__col_right">+2%</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table">
+            <caption class="table__caption">Сайты и категории</caption>
+            <thead class="table__header">
+              <tr class="table__row">
+                <th class="table__th table__th_left">Категории приложений</th>
+                <th class="table__th">время</th>
+                <th class="table__th">%</th>
+                <th class="table__th">рост</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__col table__col-indicator table__col-indicator_yellow">Поисковики</td>
+                <td class="table__col table__col_time">20:55</td>
+                <td class="table__col table__col_center">18</td>
+                <td class="table__col table__col_right">+2%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__col table__col-indicator table__col-indicator_green">Новостные порталы</td>
+                <td class="table__col table__col_time">20:55</td>
+                <td class="table__col table__col_center">18</td>
+                <td class="table__col table__col_right">+2%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__col table__col-indicator table__col-indicator_green">Сайты с неопределенным
+                  наполнением</td>
+                <td class="table__col table__col_time">20:55</td>
+                <td class="table__col table__col_center">18</td>
+                <td class="table__col table__col_right">+2%</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <table class="table">
+            <caption class="table__caption">Дисциплина</caption>
+            <thead class="table__header">
+              <tr class="table__row">
+                <th class="table__th table__th_left">Дата</th>
+                <th class="table__th">Приход на работу</th>
+                <th class="table__th">Уход с работы</th>
+                <th class="table__th">Время на работе</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__col">29.02</td>
+                <td class="table__col table__col_center">08:46 <span class="_negative">+16 мин</span></td>
+                <td class="table__col table__col_center">8:46 <span class="_negative">+16 мин</span></td>
+                <td class="table__col table__col_right">09:06 <span class="_positive">+6 мин</span></td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__col">28.02</td>
+                <td class="table__col table__col_center">08:46 <span class="_negative">+16 мин</span></td>
+                <td class="table__col table__col_center">8:46 <span class="_negative">+16 мин</span></td>
+                <td class="table__col table__col_right">09:06 <span class="_positive">+6 мин</span></td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__col">25.02</td>
+                <td class="table__col table__col_center">08:46 <span class="_negative">+16 мин</span></td>
+                <td class="table__col table__col_center">8:46 <span class="_negative">+16 мин</span></td>
+                <td class="table__col table__col_right">09:06 <span class="_positive">+6 мин</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

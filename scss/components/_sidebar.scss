@@ -1,0 +1,151 @@
+.sidebar {
+	flex: 1 1 21%;
+	min-width: 325px;
+	height: 100vh;
+	border-right: 1px solid #e4e4e4;
+	background-color: #fff;
+	z-index: 50;
+	transition: all 0.3s ease 0s;
+	@media (max-width: 950px) {
+		position: absolute;
+		top: 98px;
+		left: -100%;
+		visibility: hidden;
+		opacity: 0;
+	}
+	@media (min-width: 950px) and (max-width: 1100px) {
+		min-width: 300px;
+	}
+
+	// .sidebar__search
+
+	&__search {
+		display: flex;
+		align-items: center;
+		height: 30px;
+		padding-left: 28px;
+		background-color: #f9f8f6;
+		color: #999999;
+	}
+
+	// .sidebar__input
+
+	&__input {
+		padding-left: 11px;
+		font-size: 16px;
+		background-color: #f9f8f6;
+		&::placeholder {
+			color: #999999;
+		}
+	}
+
+	// .sidebar__person-list
+
+	&__person-list {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.person-item {
+	cursor: pointer;
+	opacity: 0.5;
+	background-color: #e7e6e1;
+	border-bottom: 1px solid #dfdbdc;
+	&:hover {
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	}
+
+	// .person-item__body
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 88px;
+		padding: 20px 27px 17px 28px;
+		@media (max-width: 1100px) {
+			padding-right: 15px;
+		}
+	}
+
+	// .person-item__avatar
+
+	&__avatar {
+		width: 50px;
+		height: 50px;
+		img {
+			min-width: 100%;
+			height: 100%;
+		}
+	}
+
+	// .person-item__description
+
+	&__description {
+		flex: 1 1 auto;
+		margin-left: 12px;
+	}
+
+	// .person-item__name
+
+	&__name {
+		margin-bottom: 7px;
+		span {
+			position: relative;
+			font-weight: 600;
+			color: #058dc7;
+			&::before {
+				position: absolute;
+				top: 0;
+				right: -20px;
+				font-size: 16px;
+				color: #000;
+			}
+		}
+	}
+
+	// .person-item__position
+
+	&__position {
+		margin-bottom: 7px;
+		font-size: 13px;
+		color: #808080;
+	}
+
+	// .person-item__status
+
+	&__status {
+		display: inline-block;
+		padding: 5px 5px;
+		font-size: 10px;
+		border-radius: 4px;
+		color: #ffffff;
+	}
+
+	// .person-item__points
+
+	&__points {
+		font-size: 20px;
+		font-weight: 600;
+		color: #a2a2a2;
+	}
+	// .person-item_active
+
+	&_active {
+		background-color: #fff;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		opacity: 1;
+	}
+}
+
+.sidebar-open {
+	transition: all 0.3s ease 0s;
+	@media (max-width: 950px) {
+		position: absolute;
+		top: 98px;
+		left: 0;
+		visibility: visible;
+		opacity: 1;
+	}
+}

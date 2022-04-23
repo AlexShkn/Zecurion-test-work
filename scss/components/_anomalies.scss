@@ -1,0 +1,50 @@
+.anomalies {
+	margin-bottom: 74px;
+
+	// .anomalies__title
+
+	&__title {
+		margin-bottom: 20px;
+		font-size: 16px;
+		color: #4d4d4d;
+	}
+
+	// .anomalies__list
+
+	&__list {
+		display: flex;
+		@media (min-width: 950px) and (max-width: 1100px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	// .anomalies__item
+
+	&__item {
+		position: relative;
+		flex: 1 1 404px;
+		max-width: 404px;
+		display: flex;
+		align-items: center;
+		height: 74px;
+		padding: 10px 40px;
+		border: 1px solid #ee144e;
+		border-radius: 4px;
+		font-size: 14px;
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 30px;
+			left: 15px;
+			width: 15px;
+			height: 14px;
+			background: url('../img/warning.svg') 0 0 no-repeat;
+		}
+		@media (max-width: 1100px) {
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.bread-crumbs {
+	background-color: #f3f2ed;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	// .bread-crumbs__list
+
+	&__list {
+		display: flex;
+		padding-left: 10px;
+		li {
+			padding-right: 5px;
+		}
+	}
+
+	// .bread-crumbs__employees
+
+	&__employees {
+		font-weight: 600;
+		color: #058dc7;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: #08abf1;
+		}
+	}
+
+	// .bread-crumbs__arrow
+
+	&__arrow {
+		display: flex;
+		align-items: center;
+		color: #707478;
+		font-size: 12px;
+	}
+
+	// .bread-crumbs__person
+
+	&__person {
+		font-weight: 600;
+		color: #707478;
+	}
+}
